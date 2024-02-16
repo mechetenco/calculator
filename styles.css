@@ -1,0 +1,87 @@
+
+/*styles.css*/
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.calculator {
+  background-color: white;
+  width: 18.25rem;
+  text-align: right;
+  color: black;
+  box-shadow: 1px 1px 1px 1px blue;
+}
+
+.display {
+  font-size: 2.5rem;
+  min-height: 5.5rem;
+  overflow-wrap: break-word;
+  background-color: inherit;
+  width: 100%;
+  border: none;
+  color: black;
+  padding: 1rem;
+  text-align: right;
+}
+.last-display {
+  font-size: 1rem;
+  font-weight: 400;
+  min-height: 3.5rem;
+  overflow-wrap: break-word;
+  background-color: inherit;
+  width: 100%;
+  border: none;
+  color: black;
+  padding: 1rem;
+  text-align: right;
+}
+.buttons {
+  display: flex;
+  gap: 0.1rem;
+  flex-wrap: wrap;
+  padding: 0.1rem;
+  justify-content: center;
+}
+.buttons > button {
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  background-color: wheat;
+  border: none;
+  flex-basis: calc(25% - 0.1rem);
+  padding: 1rem 0;
+}
+button.big-btn {
+  flex-basis: calc(50% - 0.1rem);
+  background-color: wheat;
+}
+button.function {
+  background-color: wheat;
+}
+button.operator,
+button.op {
+  background-color: wheat;
+}
+button#equal {
+  background-color: wheat;
+}
+.buttons > button:hover {
+  background-color: wheat;
+}
+.buttons > button:active {
+  background-color: wheat;
+}
